@@ -1,0 +1,14 @@
+#content {
+  margin-bottom: 24px; }
+
+#post .date {
+  padding: 3px; }
+#post .body {
+  padding: 24px 3px 12px 3px; }
+
+.low {
+  font-family: Palatino, Georgia, "Times New Roman", sans-serif;
+  font-style: italic;
+  font-weight: normal;
+  text-transform: lowercase;
+  color: #666666; }

@@ -1,0 +1,15 @@
+---
+layout: default
+title: 吉川茶褒
+---
+
+<div class="bio">
+  <p>欢迎来到我的博客，吉川茶褒。</p>
+</div>
+
+<ul class="posts">
+  <h3>最新的文章:</h3>
+  {% for post in site.posts %}
+    <li><span class="date">{{post.date | date: "%d %b %Y"}}</span>&nbsp;&raquo;&nbsp;<a href="{{post.url}}">{{post.title}}</a></li>
+  {% endfor %}
+</ul>
