@@ -10,7 +10,7 @@ title: 吉川茶褒
         <a href="{{post.url}}" rel="bookmark" title="Permanent Link to
           {{post.title}}">{{post.title}}</a>
       </h3>
-      <span class="date">{{post.date | date: "%d-%m-%Y"}}</span>
+      <div class="date">@ {{post.date | date: "%a %b %d %Y"}}</div>
     </div>
     <div class="content">
       {{post.content}}
