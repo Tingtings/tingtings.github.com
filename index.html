@@ -3,13 +3,22 @@ layout: default
 title: 吉川茶褒
 ---
 
-<div class="bio">
-  <p>欢迎来到我的博客，吉川茶褒。</p>
-</div>
+{% for post in site.posts limit: 5 %}
+  <div class="post">
+    <div class="head">
+      <h3 class="title">
+        <a href="{{post.url}}" rel="bookmark" title="Permanent Link to
+          {{post.title}}">{{post.title}}</a>
+      </h3>
+      <span class="date">{{post.date | date: "%d-%m-%Y"}}</span>
+    </div>
+    <div class="content">
+      {{post.content}}
+    </div>
+    <hr class="post-end" />
+  </div>
+{% endfor %}
 
-<ul class="posts">
-  <h3>最新的文章:</h3>
-  {% for post in site.posts %}
-    <li><span class="date">{{post.date | date: "%d %b %Y"}}</span>&nbsp;&raquo;&nbsp;<a href="{{post.url}}">{{post.title}}</a></li>
-  {% endfor %}
-</ul>
+{% if site.posts.size > 5 %}
+<a href="/archive.html" class="more-posts">More >></a>
+{% endif %}

@@ -1,5 +1,72 @@
+.clearboth {
+  clear: both; }
+
+.more-posts {
+  font-size: 18px; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+
+body {
+  background-color: #fcfcfc; }
+
+#header #site-title {
+  float: left; }
+  #header #site-title h1 {
+    margin-bottom: 16px; }
+    #header #site-title h1 a {
+      color: #333333; }
+  #header #site-title h4 {
+    color: #787878;
+    line-height: 1em;
+    margin-bottom: 16px; }
+#header #site-nav {
+  float: right; }
+  #header #site-nav ul {
+    padding-top: 16px;
+    list-style: none; }
+    #header #site-nav ul li {
+      list-style-image: none;
+      list-style-type: none;
+      margin-left: 0px;
+      display: inline;
+      float: left;
+      padding-left: 4px;
+      padding-right: 5px; }
+      #header #site-nav ul li.first {
+        padding-left: 0; }
+      #header #site-nav ul li.right {
+        padding-right: 0; }
+      #header #site-nav ul li a {
+        color: #666666;
+        text-transform: uppercase; }
+        #header #site-nav ul li a:hover {
+          text-decoration: none;
+          border-bottom: 3px solid #4096ee; }
+
 #content {
   margin-bottom: 24px; }
+  #content .post {
+    overflow: hidden;
+    clear: both;
+    padding-bottom: 20px; }
+    #content .post .head {
+      padding: 3px 0 6px 4px; }
+      #content .post .head .title {
+        margin: 3px 0 4px;
+        padding-bottom: 4px;
+        font-weight: bold;
+        height: 22px;
+        font-size: 22px; }
+        #content .post .head .title a {
+          color: black; }
+    #content .post .content {
+      padding-top: 12px; }
+      #content .post .content p {
+        line-height: 25px;
+        margin-bottom: 18px; }
 
 #post .date {
   padding: 3px; }

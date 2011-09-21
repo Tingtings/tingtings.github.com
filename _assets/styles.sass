@@ -1,5 +1,77 @@
+$link-color: #666
+
+.clearboth
+  clear: both
+
+.more-posts
+  font-size: 18px
+
+a
+  text-decoration: none
+  &:hover
+    text-decoration: underline
+
+body
+  background-color: #FCFCFC
+
+#header
+  #site-title
+    float: left
+    h1
+      a
+        color: #333
+      margin-bottom: 16px
+    h4
+      color: #787878
+      line-height: 1em
+      margin-bottom: 16px
+
+  #site-nav
+    float: right
+    ul
+      padding-top: 16px
+      list-style: none
+      li
+        list-style-image: none
+        list-style-type: none
+        margin-left: 0px
+        display: inline
+        float: left
+        padding-left: 4px
+        padding-right: 5px
+        &.first
+          padding-left: 0
+        &.right
+          padding-right: 0
+        a
+          color: $link-color
+          text-transform: uppercase
+          &:hover
+            text-decoration: none
+            border-bottom: 3px solid #4096EE
+
 #content
   margin-bottom: 24px
+
+  .post
+    overflow: hidden
+    clear: both
+    padding-bottom: 20px
+    .head
+      padding: 3px 0 6px 4px
+      .title
+        margin: 3px 0 4px
+        padding-bottom: 4px
+        font-weight: bold
+        height: 22px
+        font-size: 22px
+        a
+          color: black
+    .content
+      padding-top: 12px
+      p
+        line-height: 25px
+        margin-bottom: 18px
 
 #post
   .date

@@ -16,13 +16,27 @@
 
   <body>
 
+    <!--
     <a href="http://github.com/tingtings"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
+    -->
 
-    <div class='container'>
+    <div class='container span-16'>
       <div id='header'>
-        <h1><a href="/">吉川茶褒</a></h1>
-        <h4>...</h4>
+        <div id="site-title">
+          <h1><a href="/">吉川茶褒</a></h1>
+          <h4>chable.info</h4>
+        </div>
+
+        <div id="site-nav" class="span-8">
+          <ul>
+            <li class="first"><a href="/" title="chable.info">Home</a></li>
+            <li><a href="/archive.html" title="Archive">Archive</a></li>
+            <li class="last"><a href="/about.html" title="About">About</a></li>     
+          </ul>
+        </div>
       </div>
+
+      <div class="clearboth"></div>
 
       <div id='content'>{{ content }}</div>
 
