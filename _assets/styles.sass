@@ -1,5 +1,10 @@
 $link-color: #666
 
+@mixin pretty-underline
+  &:hover
+    text-decoration: none
+    border-bottom: 3px solid #FEE3E9
+  
 .clearboth
   clear: both
 
@@ -22,7 +27,8 @@ body
     float: left
     h1
       a
-        color: #333
+        color: #555
+        +pretty-underline
       margin-bottom: 16px
     h4
       color: #787878
@@ -49,9 +55,7 @@ body
         a
           color: $link-color
           text-transform: uppercase
-          &:hover
-            text-decoration: none
-            border-bottom: 3px solid #4096EE
+          +pretty-underline
 
 #content
   margin-bottom: 24px
@@ -69,6 +73,7 @@ body
         height: 22px
         font-size: 22px
         a
+          +pretty-underline
           color: black
     .content
       padding-top: 12px
@@ -81,6 +86,51 @@ body
     padding: 3px
   .body
     padding: 24px 3px 12px 3px
+
+#bio
+  margin: 6px
+  padding: 12px
+  border: 2px solid darken(#ffe3e9, 8%)
+  background-color: #FFE3E9
+  width: 500px
+  -moz-border-radius: 5px
+  -khtml-border-radius: 5px
+  -webkit-border-radius: 5px
+  border-radius: 5px
+  .row
+    padding-top: 32px
+    padding-left: 32px
+    padding-bottom: 32px
+    position: relative
+    .avatar
+      display: inline-block
+    .name
+      position: absolute
+      bottom: 72px
+      left: 160px
+      font-size: 18px
+    .intro
+      position: absolute
+      top: 32px
+      left: 160px
+      p
+        margin-bottom: 0
+        &.first
+          margin-bottom: 60px
+  ul.links
+    list-style: none
+    padding-left: 32px
+    padding-bottom: 24px
+    li
+      a
+        color: #009AFF
+        &:visited
+          color: #009AFF
+        &:hover
+          color: #356AA0
+      div
+        display: inline-block
+        width: 70px
 
 .low
   font-family: Palatino, Georgia, "Times New Roman", sans-serif

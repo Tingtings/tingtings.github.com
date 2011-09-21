@@ -20,7 +20,10 @@ body {
   #header #site-title h1 {
     margin-bottom: 16px; }
     #header #site-title h1 a {
-      color: #333333; }
+      color: #555555; }
+      #header #site-title h1 a:hover {
+        text-decoration: none;
+        border-bottom: 3px solid #fee3e9; }
   #header #site-title h4 {
     color: #787878;
     line-height: 1em;
@@ -47,7 +50,7 @@ body {
         text-transform: uppercase; }
         #header #site-nav ul li a:hover {
           text-decoration: none;
-          border-bottom: 3px solid #4096ee; }
+          border-bottom: 3px solid #fee3e9; }
 
 #content {
   margin-bottom: 24px; }
@@ -65,6 +68,9 @@ body {
         font-size: 22px; }
         #content .post .head .title a {
           color: black; }
+          #content .post .head .title a:hover {
+            text-decoration: none;
+            border-bottom: 3px solid #fee3e9; }
     #content .post .content {
       padding-top: 12px; }
       #content .post .content p {
@@ -75,6 +81,50 @@ body {
   padding: 3px; }
 #post .body {
   padding: 24px 3px 12px 3px; }
+
+#bio {
+  margin: 6px;
+  padding: 12px;
+  border: 2px solid #ffbac9;
+  background-color: #ffe3e9;
+  width: 500px;
+  -moz-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px; }
+  #bio .row {
+    padding-top: 32px;
+    padding-left: 32px;
+    padding-bottom: 32px;
+    position: relative; }
+    #bio .row .avatar {
+      display: inline-block; }
+    #bio .row .name {
+      position: absolute;
+      bottom: 72px;
+      left: 160px;
+      font-size: 18px; }
+    #bio .row .intro {
+      position: absolute;
+      top: 32px;
+      left: 160px; }
+      #bio .row .intro p {
+        margin-bottom: 0; }
+        #bio .row .intro p.first {
+          margin-bottom: 60px; }
+  #bio ul.links {
+    list-style: none;
+    padding-left: 32px;
+    padding-bottom: 24px; }
+    #bio ul.links li a {
+      color: #009aff; }
+      #bio ul.links li a:visited {
+        color: #009aff; }
+      #bio ul.links li a:hover {
+        color: #356aa0; }
+    #bio ul.links li div {
+      display: inline-block;
+      width: 70px; }
 
 .low {
   font-family: Palatino, Georgia, "Times New Roman", sans-serif;
